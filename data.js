@@ -7,7 +7,7 @@ const cvData = {
         "location": "Hanoi, Vietnam",
         "linkedin": "linkedin.com/in/haducquang",
         "linkedin_url": "https://www.linkedin.com/in/haducquang/",
-        "status": "Open to Work"
+        "status": ""
     },
     "summary": "Senior DevOps & Cloud Engineer specializing in AWS architecture and automation. <strong>AWS Certified Solutions Architect – Professional</strong> with deep expertise in designing secure, scalable, and high-availability cloud systems. Proven track record of leading large-scale migrations from <strong>On-premise (VMware) to AWS</strong>. Active knowledge sharer on Design Patterns and Load Balancing Algorithms.",
     "skills": [
