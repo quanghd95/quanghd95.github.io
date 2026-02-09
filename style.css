@@ -1,0 +1,312 @@
+:root {
+    --primary-color: #2c3e50;
+    /* Dark slate blue/grey - Professional */
+    --accent-color: #2980b9;
+    /* Strong blue for links/headers */
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --code-bg: #eee;
+    --border-color: #ddd;
+    --font-main: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --font-mono: 'Roboto Mono', 'Consolas', 'Monaco', monospace;
+    /* For skills/code */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    font-size: 14px;
+    /* Standard print size */
+}
+
+.container {
+    max-width: 21cm;
+    /* A4 Width */
+    margin: 30px auto;
+    background: #fff;
+    padding: 40px 50px;
+    /* Generous margins */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+header {
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-content h1 {
+    font-size: 28px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.header-content h2 {
+    font-size: 16px;
+    color: var(--accent-color);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+p {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+/* Skills - Technical Tag Style */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column stack for clean reading */
+    gap: 8px;
+}
+
+.skill-category {
+    font-size: 13px;
+    display: flex;
+    align-items: baseline;
+}
+
+.skill-category>strong:first-child {
+    min-width: 140px;
+    /* Fixed width label */
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.skill-category span,
+.skill-category {
+    /* The items part - we style via JS injection usually, but if mixed content: */
+}
+
+/* Use monospace for the skills list */
+.skill-category {
+    font-family: var(--font-main);
+}
+
+/* We will target the TEXT inside items in JS specifically if we want, but generally for DevOps: */
+
+/* Experience */
+.job {
+    margin-bottom: 15px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+}
+
+.job-title {
+    font-weight: 700;
+    font-size: 15px;
+    color: #222;
+}
+
+.date {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+}
+
+.company {
+    font-style: italic;
+    color: var(--accent-color);
+    font-size: 13px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 8px;
+}
+
+.job ul,
+.project-item ul {
+    list-style-type: square;
+    /* Technical look */
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.job li {
+    margin-bottom: 4px;
+    color: #444;
+}
+
+/* Projects */
+.project-item {
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.project-title::before {
+    content: "» ";
+    color: var(--accent-color);
+}
+
+/* Certifications Grid */
+.cert-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    font-family: var(--font-main);
+    font-size: 13px;
+}
+
+/* Download Button */
+.download-btn {
+    display: block;
+    width: 200px;
+    margin: 40px auto;
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+}
+
+.download-btn:hover {
+    background-color: var(--accent-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* PRINT STYLES - CRITICAL FOR CV */
+@media print {
+    @page {
+        margin: 1cm;
+        /* Standard margins */
+        size: A4 portrait;
+    }
+
+    body {
+        background: none;
+        color: #000;
+        font-size: 12pt;
+        /* Slightly larger for print readability */
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+    }
+
+    .download-btn {
+        display: none !important;
+    }
+
+    header {
+        border-bottom: 2px solid #000;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        /* Links black in print */
+    }
+
+    /* Ensure URL is not printed after link text in some browsers */
+    a[href]:after {
+        content: none !important;
+    }
+
+    /* Avoid breaking elements */
+    .job,
+    .project-item,
+    h3 {
+        page-break-inside: avoid;
+    }
+
+    section {
+        margin-bottom: 15px;
+    }
+}
+/* Status Badge */
+.status-badge {
+    display: inline-block;
+    background-color: #e6f4ea; /* Light green background */
+    color: #1e7e34;            /* Dark green text */
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;       /* Pill shape */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+    border: 1px solid #c3e6cb;
+    font-family: var(--font-main);
+}
+
+/* Project Tech Stack */
+.project-tech {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 5px;
+    font-family: var(--font-mono);
+}
+
+.project-tech strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
