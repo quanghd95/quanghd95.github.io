@@ -1,0 +1,24 @@
+# GitHub Pages Jekyll Configuration
+# Site settings
+title: Portfolio
+description: Portfolio Website
+url: https://quanghd95.github.io
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing
+exclude:
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
