@@ -2,8 +2,8 @@ const cvData = {
     "profile": {
         "name": "Hà Đức Quảng",
         "title": "Senior AWS Cloud & DevOps Engineer",
-        "email": "haquanghd95@gmail.com",
-        "phone": "(+84) 965116895",
+        "email": "",
+        "phone": "",
         "location": "Hanoi, Vietnam",
         "linkedin": "linkedin.com/in/haducquang",
         "linkedin_url": "https://www.linkedin.com/in/haducquang/",
