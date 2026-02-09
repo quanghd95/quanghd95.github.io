@@ -12,6 +12,7 @@ function renderCV(data) {
     // Profile
     document.getElementById('profile-name').textContent = data.profile.name;
     document.getElementById('profile-title').textContent = data.profile.title;
+    document.getElementById('profile-dob').textContent = data.profile.dob;
     document.getElementById('profile-email').textContent = data.profile.email;
     document.getElementById('profile-email').href = `mailto:${data.profile.email}`;
     document.getElementById('profile-phone').textContent = data.profile.phone;
