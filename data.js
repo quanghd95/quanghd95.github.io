@@ -40,7 +40,7 @@ const cvData = {
     "experience": [
         {
             "title": "Founder & Principal Architect",
-            "company": "SuperBox IoT Platform",
+            "company": "IoT-SuperBox.com",
             "date": "Mar 2024 – Present",
             "details": [
                 "Architected a high-scale <strong>Ruby on Rails 7.1</strong> SaaS backend (63K+ LOC, 59 Models, 96 Services, 58 DB Tables) with 218 RSpec test suites achieving ≥90% coverage.",
