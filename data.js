@@ -2,7 +2,7 @@ const cvData = {
     "profile": {
         "name": "Hà Đức Quảng",
         "title": "Senior Ruby on Rails & Cloud Systems Architect",
-        "email": "haducquang.work@gmail.com",
+        "email": "",
         "phone": "",
         "location": "Hanoi, Vietnam",
         "linkedin": "linkedin.com/in/haducquang",
