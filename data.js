@@ -1,64 +1,64 @@
 const cvData = {
     "profile": {
         "name": "Hà Đức Quảng",
-        "title": "Senior AWS Cloud & DevOps Engineer",
-        "email": "",
+        "title": "Senior Ruby on Rails & Cloud Systems Architect",
+        "email": "haducquang.work@gmail.com",
         "phone": "",
         "location": "Hanoi, Vietnam",
         "linkedin": "linkedin.com/in/haducquang",
         "linkedin_url": "https://www.linkedin.com/in/haducquang/",
         "dob": "Aug 1995",
-        "status": "close to Work"
+        "status": "Open to Work"
     },
-    "summary": "Senior DevOps & Cloud Engineer specializing in AWS architecture and automation. <strong>AWS Certified Solutions Architect – Professional</strong> with deep expertise in designing secure, scalable, and high-availability cloud systems. Proven track record of leading large-scale migrations from <strong>On-premise (VMware) to AWS</strong>. Active knowledge sharer on Design Patterns and Load Balancing Algorithms.",
+    "summary": "<strong>Senior Ruby on Rails & Cloud Systems Architect</strong> with <strong>6+ years of Full-stack experience</strong> specializing in enterprise Ruby on Rails (Rails 7.1), Cloud Native (AWS/OCI, Kubernetes GitOps), AI Agent Integration, and Industrial IoT systems. <strong>AWS Certified Solutions Architect – Professional</strong>. Expert in high-concurrency architecture, eBPF network observability, automated GitOps deployment, and AI-driven R&D orchestration.",
     "skills": [
         {
-            "category": "Cloud Platforms (AWS)",
-            "items": "VPC, Subnet, Security Groups, IAM, KMS, ALB/NLB, CloudWatch, S3, EC2, RDS, EKS, ECS, Route53, Lambda, CloudFormation, Direct Connect, VPN."
+            "category": "Backend & Architecture",
+            "items": "<strong>Ruby on Rails 7.1</strong>, Microservices, Domain-Driven Design (DDD), Event-Driven Architecture, Sidekiq, Dual Redis Isolation, RESTful APIs."
         },
         {
-            "category": "DevOps & Automation",
-            "items": "Terraform (IaC), CloudFormation, Jenkins, GitLab CI, Ansible, Docker, Kubernetes, CI/CD Pipelines."
+            "category": "Cloud & Infrastructure",
+            "items": "<strong>OCI (Oracle Cloud)</strong>, <strong>AWS</strong>, Kubernetes (OKE/EKS), <strong>FluxCD (GitOps)</strong>, <strong>Cilium eBPF CNI</strong>, Terraform (3-layer IaC), Helm, Docker."
         },
         {
-            "category": "Database",
-            "items": "PostgreSQL, MySQL, Amazon RDS, DynamoDB, Database HA Configuration."
+            "category": "AI & R&D Automation",
+            "items": "<strong>AI Agentic Orchestration</strong> (Multi-agent workflows, 10x R&D velocity), LLM Integration, Technical Documentation (48 ADRs, 262 Docs)."
         },
         {
-            "category": "Systems & Architecture",
-            "items": "Linux (RHEL, CentOS, Ubuntu), HA/DR Design, Design Patterns, Load Balancing Algorithms."
+            "category": "Mobile & Industrial IoT",
+            "items": "<strong>Flutter (Cross-Platform)</strong>, Clean Architecture, BLoC, BLE/SoftAP, Mosquitto MQTT (TLS/SSL), Industrial IoT Systems."
         },
         {
-            "category": "Monitoring & Logging",
-            "items": "Prometheus, Grafana, Loki, ELK Stack (Elasticsearch, Logstash, Kibana), Fluentd/Tdagent."
+            "category": "Observability & Databases",
+            "items": "<strong>VictoriaMetrics</strong>, <strong>Grafana</strong>, <strong>Loki</strong>, Prometheus, InfluxDB, PostgreSQL (PostGIS / HA), Redis State/Cache Isolation."
         },
         {
-            "category": "Programming & Development",
-            "items": "<strong>Ruby (Ruby on Rails)</strong>, Python, Shell Scripting, JavaScript."
+            "category": "Testing & DevOps QA",
+            "items": "RSpec (≥90% test coverage), CI/CD Pipelines (GitHub Actions), Zero-Downtime Deployment."
         }
     ],
     "experience": [
         {
-            "title": "Software Engineer (Self-employed)",
-            "company": "My Startup",
+            "title": "Founder & Principal Architect",
+            "company": "SuperBox IoT Platform",
             "date": "Mar 2024 – Present",
             "details": [
-                "Developed an intelligent IoT monitoring system utilizing <strong>ESP32</strong> microcontrollers, leveraging <strong>Generative AI (GenAI)</strong> to accelerate development and debugging by 40%.",
-                "Architected a self-hosted backend using <strong>Mosquitto (MQTT), Telegraf, and Grafana</strong>, containerized with <strong>Docker Compose</strong> and orchestrated on <strong>Kubernetes (K8s)</strong>.",
-                "Utilized AI-driven code generation tools to rapidly prototype firmware and optimize infrastructure configurations.",
-                "Managed the full product lifecycle from hardware prototyping to production deployment as a <strong>One-Man Army</strong>."
+                "Architected a high-scale <strong>Ruby on Rails 7.1</strong> SaaS backend (63K+ LOC, 59 Models, 96 Services, 58 DB Tables) with 218 RSpec test suites achieving ≥90% coverage.",
+                "Engineered cross-platform <strong>Flutter Mobile App</strong> (29K+ LOC) using Clean Architecture and BLoC state management for BLE/SoftAP hardware provisioning.",
+                "Designed production <strong>Kubernetes cluster on OCI</strong> powered by <strong>FluxCD GitOps</strong>, <strong>Cilium eBPF CNI</strong>, 3-layer Terraform IaC, high-availability <strong>VictoriaMetrics, Grafana & Loki Observability Stack</strong>, and Dual Redis State/Cache isolation.",
+                "Applied <strong>AI Agentic Orchestration</strong> to accelerate R&D velocity by 10x while maintaining 48 ADRs and 262 bilingual technical documents."
             ]
         },
         {
-            "title": "Ruby on Rails Developer - Cloud & DevOps Engineer",
+            "title": "Senior Ruby on Rails & Cloud Engineer",
             "company": "VTI Group",
             "date": "Apr 2020 – Mar 2024",
             "details": [
-                "Led the migration of mission-critical applications (Java/Spring Boot) from <strong>On-premise VMware infrastructure to AWS</strong>, achieving 99.99% availability.",
-                "Designed and implemented a secure AWS Landing Zone with multi-account strategy, Transit Gateway, and VPN/Direct Connect.",
-                "Managed the migration of legacy <strong>On Premise Database to Amazon RDS</strong> (and Aurora PostgreSQL), ensuring zero data loss during cutover.",
-                "Implemented Infrastructure as Code (IaC) using <strong>Terraform, CloudFormation</strong> to provision and manage AWS resources across Dev, Staging, and Production environments.",
-                "Optimized cloud costs by implementing auto-scaling policies and rightsizing EC2 instances, saving 25% on monthly AWS bills."
+                "Led migration of mission-critical Rails applications from VMware on-premise to <strong>AWS Cloud</strong>, maintaining 99.95% availability.",
+                "Designed secure AWS multi-account architecture, Transit Gateway, VPN, and Direct Connect connectivity.",
+                "Migrated legacy databases to <strong>Amazon RDS / Aurora PostgreSQL</strong> with zero cutover downtime or data loss.",
+                "Automated multi-environment infrastructure provisioning (Dev/Staging/Prod) using 3-layer <strong>Terraform & CloudFormation</strong>.",
+                "Optimized EC2 auto-scaling and instance rightsizing, saving 25% on monthly cloud computing expenditure."
             ]
         },
         {
@@ -66,70 +66,64 @@ const cvData = {
             "company": "Sun* Inc.",
             "date": "Aug 2018 – Apr 2020",
             "details": [
-                "Developed and maintained scalable web applications using <strong>Ruby on Rails</strong> for international clients.",
-                "Deployed and managed containerized applications using <strong>Docker</strong> and AWS ECS.",
-                "Collaborated with cross-functional agile teams to deliver high-quality software solutions.",
-                "Optimized database queries (MySQL/PostgreSQL) to improve application performance."
+                "Developed scalable web applications and microservices using <strong>Ruby on Rails</strong> for Japanese enterprise clients.",
+                "Containerized applications using <strong>Docker</strong> and managed deployments on AWS ECS.",
+                "Optimized complex PostgreSQL database queries and indexes, improving overall API responsiveness by 40%.",
+                "Practiced Agile/Scrum with rigorous code review processes and automated RSpec unit testing."
             ]
         }
     ],
     "projects": [
         {
-            "title": "Event-Driven Background Job Migration",
+            "title": "Cloud-Native Industrial IoT Observability & Telemetry Stack",
+            "tech": "Mosquitto MQTT, VictoriaMetrics, Grafana, Loki, Cilium eBPF, OCI OKE",
+            "details": [
+                "Engineered end-to-end IoT data ingestion, monitoring, and telemetry visualization using TLS-secured Mosquitto MQTT broker integrated with high-availability <strong>VictoriaMetrics, Grafana & Loki Observability Stack</strong>.",
+                "Secured inter-service pod communication using Cilium eBPF network policies and automated log collection via Loki."
+            ]
+        },
+        {
+            "title": "Real-Time User Geolocation & Spatial Analytics Platform (AWS)",
+            "tech": "Ruby on Rails, PostgreSQL (PostGIS), Amazon Athena, Sidekiq, AWS S3, AWS ECS, Terraform",
+            "details": [
+                "Architected a spatial analytics engine on <strong>Ruby on Rails</strong> and <strong>PostgreSQL (PostGIS)</strong> to process and query high-frequency user location data streams.",
+                "Integrated <strong>Amazon Athena</strong> and <strong>AWS S3</strong> to execute serverless SQL queries over historical location data archives, significantly reducing database storage costs.",
+                "Utilized <strong>Sidekiq</strong> for asynchronous background location processing, geofencing calculations, and automated spatial event triggers.",
+                "Designed interactive spatial analytics dashboards displaying user density heatmaps, movement pattern trajectories, and automated zone alerts."
+            ]
+        },
+        {
+            "title": "Event-Driven Background Processing Migration",
             "tech": "AWS Lambda, Amazon SQS, Amazon SNS, EventBridge, Terraform",
             "details": [
-                "Re-architected legacy background job processing from a polling-based system to an <strong>Event-Driven Architecture</strong> using AWS Lambda and SQS.",
-                "Decoupled microservices communication using <strong>Amazon SNS and EventBridge</strong>, improving system scalability and fault tolerance.",
-                "Secured the event bus and message queues using <strong>IAM least-privilege policies</strong> and server-side encryption (KMS)."
+                "Re-architected legacy polling background jobs into high-throughput <strong>Event-Driven Architecture</strong> via AWS Lambda, SQS, and EventBridge.",
+                "Decoupled microservices communication via SNS pub/sub channels, significantly improving system scalability and fault tolerance."
             ]
         },
         {
-            "title": "SuperBox - AIoT Monitoring Platform",
-            "tech": "Ruby on Rails 7, Mosquitto (MQTT), InfluxDB, Telegraf, Grafana, Docker, Nginx, PostgreSQL",
+            "title": "Enterprise Datacenter to AWS Cloud Migration",
+            "tech": "AWS (MGN, DMS), Terraform, EC2 Spot Instances, ElastiCache Redis",
             "details": [
-                "Built a comprehensive IoT platform for real-time monitoring using the <strong>TIG Stack (Telegraf, InfluxDB, Grafana)</strong>.",
-                "Secured device communication with <strong>Mosquitto MQTT over TLS/SSL</strong> and Nginx reverse proxy.",
-                "Developed a centralized management dashboard using <strong>Ruby on Rails</strong> and PostgreSQL with role-based access control.",
-                "Automated multi-environment deployments (Dev/Prod) using <strong>Docker Compose profiles</strong> and container orchestration."
+                "Architected stateless application tier by offloading session data to ElastiCache Redis, enabling dynamic auto-scaling.",
+                "Implemented EC2 Spot Instance fleets for batch workloads, reducing server costs by 70% while maintaining high availability."
             ]
         },
         {
-            "title": "Scalable SaaS Application Modernization (Ruby on Rails)",
-            "tech": "Ruby on Rails, Docker, AWS ECS, Jenkins, RSpec, Redis, Sidekiq, Prometheus, Grafana, Loki",
+            "title": "High-Throughput Serverless Data Pipeline",
+            "tech": "AWS Glue, AWS Batch, Amazon EventBridge, PySpark, Amazon S3",
             "details": [
-                "Refactored a monolithic Rails application into microservices using Docker and deployed on Amazon ECS.",
-                "Built automated CI/CD pipelines using <strong>Jenkins</strong> to run <strong>RSpec</strong> test suites and deploy to production.",
-                "Implemented background job processing with Sidekiq/Redis and centralized logging/monitoring using <strong>Prometheus, Grafana, and Loki</strong>.",
-                "Optimized database performance and reduced query time by 50% through indexing and caching strategies.",
-                "Adopted <strong>Agile (Scrum)</strong> methodologies, participating in daily stand-ups and sprint retrospectives to ensure continuous delivery and team alignment."
-            ]
-        },
-        {
-            "title": "Enterprise Datacenter Migration to AWS (Design & Architecture)",
-            "tech": "AWS (MGN, DMS), Terraform, Auto Scaling, Spot Instances, ElastiCache",
-            "details": [
-                "Architected the comprehensive migration strategy for monolithic applications from a physical datacenter to AWS.",
-                "Designed a <strong>Stateless Architecture</strong> by decoupling session state to ElastiCache, enabling seamless <strong>Auto Scaling</strong>.",
-                "Implemented <strong>EC2 Spot Instances</strong> strategy for stateless workloads, reducing compute costs by 70% while maintaining high availability."
-            ]
-        },
-        {
-            "title": "Scalable ETL Data Pipeline Construction",
-            "tech": "AWS Batch, AWS Glue, Amazon EventBridge, S3, Python (PySpark)",
-            "details": [
-                "Architected a serverless ETL pipeline using <strong>AWS Glue and AWS Batch</strong> to process Terabytes of data daily.",
-                "Utilized <strong>Amazon EventBridge</strong> to trigger data processing workflows based on S3 events and scheduled rules.",
-                "Optimized Glue PySpark jobs and Batch compute environments, reducing data processing costs by 35%."
+                "Constructed serverless ETL pipeline using AWS Glue PySpark and AWS Batch to process Terabytes of telemetry data daily.",
+                "Automated data enrichment workflows triggered via S3 EventBridge hooks, reducing data processing runtime by 35%."
             ]
         }
     ],
     "certifications": [
-        "• <strong>AWS Certified Solutions Architect – Professional</strong>",
-        "• AWS Certified Solutions Architect – Associate"
+        "AWS Certified Solutions Architect – Professional",
+        "AWS Certified Solutions Architect – Associate"
     ],
     "education": {
         "degree": "Bachelor of Science",
         "school": "Hanoi University of Science and Technology (HUST)",
-        "year": "2013-2018"
+        "year": "2013 – 2018"
     }
 };

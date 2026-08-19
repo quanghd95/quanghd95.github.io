@@ -1,15 +1,14 @@
 :root {
-    --primary-color: #2c3e50;
-    /* Dark slate blue/grey - Professional */
-    --accent-color: #2980b9;
-    /* Strong blue for links/headers */
-    --text-color: #333;
-    --light-bg: #f8f9fa;
-    --code-bg: #eee;
-    --border-color: #ddd;
-    --font-main: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    --font-mono: 'Roboto Mono', 'Consolas', 'Monaco', monospace;
-    /* For skills/code */
+    --primary-color: #1e293b;
+    /* Slate 900 */
+    --accent-color: #0284c7;
+    /* Sky 600 */
+    --text-color: #334155;
+    /* Slate 700 */
+    --light-bg: #f8fafc;
+    --border-color: #e2e8f0;
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
 }
 
 * {
@@ -23,50 +22,57 @@ body {
     line-height: 1.5;
     color: var(--text-color);
     background-color: var(--light-bg);
-    font-size: 14px;
-    /* Standard print size */
+    font-size: 13.5px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container {
     max-width: 21cm;
     /* A4 Width */
     margin: 30px auto;
-    background: #fff;
-    padding: 40px 50px;
-    /* Generous margins */
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+    padding: 40px 48px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
 }
 
 /* Header */
 header {
-    border-bottom: 3px solid var(--primary-color);
-    padding-bottom: 15px;
-    margin-bottom: 25px;
+    border-bottom: 2.5px solid var(--primary-color);
+    padding-bottom: 16px;
+    margin-bottom: 22px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .header-content h1 {
-    font-size: 28px;
+    font-size: 26px;
     color: var(--primary-color);
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 5px;
+    letter-spacing: 1.2px;
+    margin-bottom: 4px;
     font-weight: 700;
 }
 
 .header-content h2 {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--accent-color);
-    font-weight: 500;
-    letter-spacing: 0.5px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 6px;
+}
+
+.header-content p {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 4px;
 }
 
 .contact-info {
     text-align: right;
     font-size: 12px;
-    color: #555;
+    color: #475569;
     line-height: 1.6;
 }
 
@@ -76,20 +82,39 @@ header {
     font-weight: 500;
 }
 
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Status Badge */
+.status-badge {
+    display: inline-block;
+    background-color: #f0fdf4;
+    color: #166534;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+    border: 1px solid #bbf7d0;
+}
+
 /* Sections */
 section {
     margin-bottom: 20px;
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--primary-color);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1.5px solid var(--border-color);
     padding-bottom: 4px;
     margin-bottom: 12px;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
 }
 
 p {
@@ -97,44 +122,39 @@ p {
     text-align: justify;
 }
 
-/* Skills - Technical Tag Style */
+/* Technical Skills Grid */
 .skills-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* Single column stack for clean reading */
+    display: flex;
+    flex-direction: column;
     gap: 8px;
 }
 
 .skill-category {
     font-size: 13px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 12px;
     align-items: baseline;
 }
 
-.skill-category>strong:first-child {
-    min-width: 140px;
-    /* Fixed width label */
-    display: inline-block;
+.skill-name {
     color: var(--primary-color);
     font-weight: 600;
-    margin-right: 10px;
 }
 
-.skill-category span,
-.skill-category {
-    /* The items part - we style via JS injection usually, but if mixed content: */
+.skill-desc {
+    color: var(--text-color);
+    line-height: 1.5;
 }
 
-/* Use monospace for the skills list */
-.skill-category {
-    font-family: var(--font-main);
+.skill-desc strong {
+    color: #0f172a;
+    font-weight: 600;
 }
 
-/* We will target the TEXT inside items in JS specifically if we want, but generally for DevOps: */
-
-/* Experience */
+/* Experience & Jobs */
 .job {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .job-header {
@@ -147,13 +167,13 @@ p {
 .job-title {
     font-weight: 700;
     font-size: 15px;
-    color: #222;
+    color: var(--primary-color);
 }
 
 .date {
     font-family: var(--font-mono);
     font-size: 12px;
-    color: #666;
+    color: #64748b;
     font-weight: 500;
 }
 
@@ -162,33 +182,37 @@ p {
     color: var(--accent-color);
     font-size: 13px;
     margin-bottom: 6px;
-    border-left: 3px solid var(--accent-color);
-    padding-left: 8px;
+    font-weight: 500;
 }
 
 .job ul,
 .project-item ul {
     list-style-type: square;
-    /* Technical look */
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
-.job li {
+.job li,
+.project-item li {
     margin-bottom: 4px;
-    color: #444;
+    color: #334155;
+}
+
+.job li strong,
+.project-item li strong {
+    color: #0f172a;
 }
 
 /* Projects */
 .project-item {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .project-title {
     font-weight: 700;
     color: var(--primary-color);
-    font-size: 14px;
-    margin-bottom: 3px;
+    font-size: 14.5px;
+    margin-bottom: 4px;
 }
 
 .project-title::before {
@@ -196,51 +220,97 @@ p {
     color: var(--accent-color);
 }
 
+.project-tech {
+    font-size: 12px;
+    color: #475569;
+    margin-bottom: 6px;
+    font-family: var(--font-mono);
+    line-height: 1.4;
+    background: #f1f5f9;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-left: 3px solid var(--accent-color);
+}
+
+.project-tech strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 /* Certifications Grid */
 .cert-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
-    font-family: var(--font-main);
     font-size: 13px;
+}
+
+.cert-item strong {
+    color: var(--primary-color);
 }
 
 /* Download Button */
 .download-btn {
     display: block;
-    width: 200px;
-    margin: 40px auto;
+    width: 220px;
+    margin: 35px auto 10px;
     padding: 12px 20px;
     background-color: var(--primary-color);
-    color: white;
+    color: #ffffff;
     text-align: center;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 1px;
-    transition: all 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 .download-btn:hover {
     background-color: var(--accent-color);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
 }
 
-/* PRINT STYLES - CRITICAL FOR CV */
+/* Responsive breakpoint for small screens */
+@media (max-width: 680px) {
+    .container {
+        padding: 24px 20px;
+        margin: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .contact-info {
+        text-align: left;
+    }
+
+    .skill-category {
+        grid-template-columns: 1fr;
+        gap: 2px;
+        margin-bottom: 6px;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* PRINT STYLES FOR CV / PDF GENERATION */
 @media print {
     @page {
         margin: 1cm;
-        /* Standard margins */
         size: A4 portrait;
     }
 
     body {
         background: none;
-        color: #000;
-        font-size: 12pt;
-        /* Slightly larger for print readability */
+        color: #000000;
+        font-size: 10.5pt;
     }
 
     .container {
@@ -257,56 +327,37 @@ p {
     }
 
     header {
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid #000000;
+    }
+
+    .skill-category {
+        grid-template-columns: 190px 1fr;
+    }
+
+    .project-tech {
+        background: none;
+        border-left: none;
+        padding: 0;
+        margin-bottom: 4px;
     }
 
     a {
         text-decoration: none;
-        color: #000;
-        /* Links black in print */
+        color: #000000;
     }
 
-    /* Ensure URL is not printed after link text in some browsers */
     a[href]:after {
         content: none !important;
     }
 
-    /* Avoid breaking elements */
     .job,
     .project-item,
+    .skill-category,
     h3 {
         page-break-inside: avoid;
     }
 
     section {
-        margin-bottom: 15px;
+        margin-bottom: 14px;
     }
-}
-/* Status Badge */
-.status-badge {
-    display: inline-block;
-    background-color: #e6f4ea; /* Light green background */
-    color: #1e7e34;            /* Dark green text */
-    font-size: 11px;
-    font-weight: 600;
-    padding: 3px 10px;
-    border-radius: 12px;       /* Pill shape */
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-top: 8px;
-    border: 1px solid #c3e6cb;
-    font-family: var(--font-main);
-}
-
-/* Project Tech Stack */
-.project-tech {
-    font-size: 13px;
-    color: #555;
-    margin-bottom: 5px;
-    font-family: var(--font-mono);
-}
-
-.project-tech strong {
-    color: var(--primary-color);
-    font-weight: 600;
 }

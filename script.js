@@ -15,18 +15,31 @@ function renderCV(data) {
     document.getElementById('profile-dob').textContent = data.profile.dob;
     document.getElementById('profile-email').textContent = data.profile.email;
     document.getElementById('profile-email').href = `mailto:${data.profile.email}`;
-    document.getElementById('profile-phone').textContent = data.profile.phone;
     document.getElementById('profile-location').textContent = data.profile.location;
     document.getElementById('profile-linkedin').textContent = data.profile.linkedin;
     document.getElementById('profile-linkedin').href = data.profile.linkedin_url;
 
+    // Phone
+    const phoneContainer = document.getElementById('phone-container');
+    const phoneEl = document.getElementById('profile-phone');
+    if (phoneContainer && phoneEl) {
+        if (data.profile.phone && data.profile.phone.trim() !== "") {
+            phoneEl.textContent = data.profile.phone;
+            phoneContainer.style.display = 'block';
+        } else {
+            phoneContainer.style.display = 'none';
+        }
+    }
+
     // Status Badge
     const statusEl = document.getElementById('profile-status');
-    if (data.profile.status) {
-        statusEl.textContent = data.profile.status;
-        statusEl.style.display = 'inline-block';
-    } else {
-        statusEl.style.display = 'none';
+    if (statusEl) {
+        if (data.profile.status) {
+            statusEl.textContent = data.profile.status;
+            statusEl.style.display = 'inline-block';
+        } else {
+            statusEl.style.display = 'none';
+        }
     }
 
     // Summary
@@ -39,7 +52,7 @@ function renderCV(data) {
         data.skills.forEach(skill => {
             const div = document.createElement('div');
             div.className = 'skill-category';
-            div.innerHTML = `<strong>${skill.category}</strong>${skill.items}`;
+            div.innerHTML = `<span class="skill-name">${skill.category}</span><span class="skill-desc">${skill.items}</span>`;
             skillsGrid.appendChild(div);
         });
     }
@@ -84,7 +97,6 @@ function renderCV(data) {
                     detailsHtml += `<li>${item}</li>`;
                 });
             } else if (project.description) {
-                // Fallback for old format
                 detailsHtml += `<li>${project.description}</li>`;
             }
             detailsHtml += '</ul>';
@@ -106,7 +118,8 @@ function renderCV(data) {
         certGrid.innerHTML = '';
         data.certifications.forEach(cert => {
             const div = document.createElement('div');
-            div.innerHTML = cert;
+            div.className = 'cert-item';
+            div.innerHTML = `• <strong>${cert}</strong>`;
             certGrid.appendChild(div);
         });
     }

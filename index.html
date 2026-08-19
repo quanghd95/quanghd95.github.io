@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Senior AWS Cloud/DevOps Engineer</title>
+    <title>Hà Đức Quảng - Senior Ruby on Rails & Cloud Systems Architect</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts for professional typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,10 +23,10 @@
                 <span id="profile-status" class="status-badge"></span>
             </div>
             <div class="contact-info">
+                <p id="phone-container">Phone: <span id="profile-phone"></span></p>
                 <p>Email: <a id="profile-email" href="#"></a></p>
-                <p>Phone: <span id="profile-phone"></span></p>
                 <p>Location: <span id="profile-location"></span></p>
-                <p>LinkedIn: <a id="profile-linkedin" href="#"></a></p>
+                <p>LinkedIn: <a id="profile-linkedin" href="#" target="_blank" rel="noopener noreferrer"></a></p>
             </div>
         </header>
 
@@ -47,22 +49,6 @@
             </div>
         </section>
 
-        <section class="education">
-            <h3>Education</h3>
-            <div id="education-section">
-                <!-- Education injected by JS -->
-            </div>
-        </section>
-
-        <section class="projects">
-            <section class="certifications">
-                <h3>Certifications</h3>
-                <div class="cert-grid" id="cert-grid">
-                    <!-- Certifications injected by JS -->
-                </div>
-            </section>
-        </section>
-
         <section class="projects">
             <h3>Key Projects</h3>
             <div id="projects-section">
@@ -70,7 +56,21 @@
             </div>
         </section>
 
-        <a href="#" class="download-btn" onclick="window.print(); return false;">Download PDF</a>
+        <section class="certifications">
+            <h3>Certifications</h3>
+            <div class="cert-grid" id="cert-grid">
+                <!-- Certifications injected by JS -->
+            </div>
+        </section>
+
+        <section class="education">
+            <h3>Education</h3>
+            <div id="education-section">
+                <!-- Education injected by JS -->
+            </div>
+        </section>
+
+        <a href="#" class="download-btn" onclick="window.print(); return false;">Download PDF / Print</a>
     </div>
 
     <script src="data.js"></script>
